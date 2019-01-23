@@ -54,7 +54,8 @@ class TroveOrder(Order):
                     },
                     'file_size': platform_data.get('file_size'),
                     'human_size': platform_data.get('size'),
-                    'md5': platform_data.get('md5')
+                    'md5': platform_data.get('md5'),
+                    'sha1': platform_data.get('sha1')
                 }]
                 pp['options_dict'] = None  # TODO: What is this?
                 product['downloads'].append(pp)
